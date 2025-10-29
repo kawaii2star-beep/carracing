@@ -1,0 +1,9 @@
+{
+  "name": "carracing",
+  "private": true,
+  "dependencies": {
+    "@farcaster/miniapp-sdk": "^0.2.1",
+    "@upstash/redis": "1.31.6",
+    "ethers": "6.13.4"
+  }
+}

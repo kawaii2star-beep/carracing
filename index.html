@@ -12,19 +12,37 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css?v=2" />
+    <!-- Include Farcaster Mini App SDK -->
+    <script type="module">
+      (async () => {
+        try {
+          const { sdk } = await import('https://esm.sh/@farcaster/miniapp-sdk?bundle');
+          window.sdk = sdk;
+        } catch (e) {
+          console.error('Error loading Farcaster SDK', e);
+        }
+      })();
+    </script>
 </head>
 
 <body>
     <div class="carGame">
+        <!-- Score display -->
         <div class="score hide"></div>
+
+        <!-- Start screen with instructions -->
         <div class="startScreen">
             <p> Click here to start<br />
                 Use arrow keys to move<br />
-                if you hit another car you will loss
+                if you hit another car you will lose
             </p>
         </div>
+
+        <!-- Game area -->
         <div class="gameArea"></div>
     </div>
+
     <script src="app.js"></script>
 </body>
 

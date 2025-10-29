@@ -27,6 +27,7 @@ function keyUp(e) {
     keys[e.key] = false;
 }
 
+
 function gamePlay() {
     let car = document.querySelector(".car");
     let road = gameArea.getBoundingClientRect();
@@ -133,7 +134,17 @@ function startGame() {
     }
 }
 
+
 function endGame() {
     player.start = false;
     startScreen.classList.remove("hide");
+
+    // Farcaster SDK: Send score to Mini App
+    if (window.sdk) {
+        window.sdk.actions.addToFavorites({
+            name: 'Car Racing Game',
+            description: `Final Score: ${player.score}`,
+            url: window.location.href,
+        });
+    }
 }
