@@ -13,18 +13,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="style.css?v=2" />
-    <!-- Include Farcaster Mini App SDK -->
+
+
+
+        <!-- scripts -->
     <script type="module">
       (async () => {
         try {
+          // reliable import for Warpcast webview
           const { sdk } = await import('https://esm.sh/@farcaster/miniapp-sdk?bundle');
           window.sdk = sdk;
+          const callReady = () => { try { sdk.actions.ready() } catch {} };
+          if (document.readyState === 'complete') {
+            requestAnimationFrame(callReady);
+          } else {
+            window.addEventListener('load', () => requestAnimationFrame(callReady), { once: true });
+          }
         } catch (e) {
-          console.error('Error loading Farcaster SDK', e);
+          console.error('[mini] sdk import failed', e);
         }
       })();
     </script>
-</head>
+    <script defer src="./app.js?v=3"></script>
+
 
 <body>
     <div class="carGame">
