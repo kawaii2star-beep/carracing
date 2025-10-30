@@ -1,72 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Car Game</title>
-    <link rel="shortcut icon" href="favicon.ico?" type="image/x-icon">
-    <link rel="icon" href="favicon.ico?" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="style.css?v=2" />
-
-
-
-        <!-- scripts -->
-    <script type="module">
-      (async () => {
-        try {
-          // reliable import for Warpcast webview
-          const { sdk } = await import('https://esm.sh/@farcaster/miniapp-sdk?bundle');
-          window.sdk = sdk;
-          const callReady = () => { try { sdk.actions.ready() } catch {} };
-          if (document.readyState === 'complete') {
-            requestAnimationFrame(callReady);
-          } else {
-            window.addEventListener('load', () => requestAnimationFrame(callReady), { once: true });
-          }
-        } catch (e) {
-          console.error('[mini] sdk import failed', e);
-        }
-      })();
-    </script>
-    <script defer src="./app.js?v=3"></script>
-
-
-    <div class="carGame">
-    <!-- Game Area (Contains the Road and Cars) -->
-    <div class="gameArea">
-        <!-- Start screen and game content goes here -->
-    </div>
-
-    <!-- Footer content that will fill the blank space -->
-    <div class="footer">
-        <p>Credits or Game Info</p>
-    </div>
-</div>
-
+	<title>Crazy Racing</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<script type="text/javascript" src="./lib/lufylegend-1.9.7.simple.min.js"></script>
+	<script type="text/javascript" src="./js/ytMain.js"></script>
+</head>
 <body>
-    <div class="carGame">
-        <!-- Score display -->
-        <div class="score hide"></div>
-
-        <!-- Start screen with instructions -->
-        <div class="startScreen">
-            <p> Click here to start<br />
-                Use arrow keys to move<br />
-                if you hit another car you will lose
-            </p>
-        </div>
-
-        <!-- Game area -->
-        <div class="gameArea"></div>
-    </div>
-
-    <script src="app.js"></script>
+	<div id="mylegend">Loading……</div>
 </body>
-
 </html>

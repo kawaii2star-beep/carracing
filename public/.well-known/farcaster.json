@@ -1,0 +1,20 @@
+{
+"frame": {
+"name": "Crazy Racing",
+"homeUrl": "",
+"iconUrl": "/images/icon.png",
+"version": "1",
+"imageUrl": "/logo.png",
+"subtitle": "Nextjs MiniApp Template",
+"webhookUrl": "/api/webhook",
+"description": "An exhilarating car racing game.",
+"splashImageUrl": "/images/splash.png",
+"primaryCategory": "Games",
+"splashBackgroundColor": "#E8EBED"
+},
+"accountAssociation": {
+"header": "eyJmaWQiOjc5NTYwNiwidHlwZSI6ImF1dGgiLCJrZXkiOiIweEJjMDhmZjEyQTNhYzE3MzZhQTYxMkFhODZDQjZjMDI0Njc1OUEzM0UifQ",
+"payload": "eyJkb21haW4iOiJmYXJjYXN0ZXItbWluaWFwcC10ZW1wbGF0ZS1zdGVlbC52ZXJjZWwuYXBwIn0",
+"signature": "MYDZ4gPwJ3S7/4DcS13JYmhAXGLnTcU0f3pQ43LYKI0R3FjwZGafOr/ZCZl+yFaCQ0DojWm9PWNuPjJi/mYJixw="
+}
+}

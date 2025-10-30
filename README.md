@@ -1,23 +1,80 @@
-# Car Game
+# Farcaster Mini App Next.js Template
 
-### Car Game is a simple web-based game created using HTML, CSS, and JavaScript. The goal of the game is to control a car and avoid obstacles on the road. The game is designed to be fun and addictive, and it's suitable for players of all ages.
+A beautiful, modern starter template for building [Farcaster Mini Apps](https://miniapps.farcaster.xyz/) with [Next.js](https://nextjs.org/), [shadcn/ui](https://ui.shadcn.com/), and [Tailwind CSS](https://tailwindcss.com/).
 
-## How To Play
-#### To play the game, simply use the arrow keys on your keyboard to control the car. You need to avoid other cars on the road. If you hit an car, the game will be over, and you'll need to restart.
+### 🌌 Live Demo
 
-## Technologies used
-#### The game was created using the following technologies:
-[![My Skills](https://skillicons.dev/icons?i=html,css,javascript&perline=3)](https://github.com/SahilAtahar/Car-Game)
+🔗 [Farcaster Mini App](https://farcaster-miniapp-template-steel.vercel.app/)
 
-## Click here to play: [Play Now](https://sahilatahar.github.io/Car-Game/)
+## ✨ Features
 
-## :camera: Image Preview
-<img src="./images/preview1.png" alt="preview1">
-<img src="./images/preview2.png" alt="preview2">
+- ⚡ **Farcaster Mini App Ready**  
+  Pre-configured for seamless integration with the Farcaster Mini App SDK.
 
-## Other Projects
-### Here are some other projects that you might be interested in:
-### (1) [New Portfolio](https://github.com/SahilAtahar/newportfolio)
-### (2) [18+ HTML,CSS,JavaScript Projects](https://github.com/SahilAtahar/HTML-CSS-JavaScript)
-### (3) [Random Joke Generator](https://github.com/SahilAtahar/Random-Joke-Generator)
-### [more](https://github.com/SahilAtahar)
+- 🎨 **Beautiful UI**  
+  Built with [shadcn/ui](https://ui.shadcn.com/) components and Tailwind CSS for rapid, accessible, and customizable design.
+
+- 📱 **Responsive Design**  
+  Looks great on all devices, from mobile to desktop.
+
+- 🛠️ **Easy Customization**  
+  Change colors, fonts, and layouts easily with Tailwind utility classes.
+
+- 🦄 **Wallet Connect Support**  
+  Includes [wagmi](https://wagmi.sh/) for Ethereum wallet connection.
+
+---
+
+## 🚀 Getting Started
+
+1. **Clone the repo:**
+
+   ```bash
+   git clone https://github.com/XerxesCoder/farcaster-miniapp.git
+   cd farcaster-miniapp
+   ```
+
+2. **Install dependencies:**
+
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. **Run the development server:**
+
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+4. **Open [http://localhost:3000](http://localhost:3000) in your browser.**
+
+## 🧩 Stack
+
+- [Next.js](https://nextjs.org/)
+- [shadcn/ui](https://ui.shadcn.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Farcaster Mini App SDK](https://miniapps.farcaster.xyz/)
+- [wagmi](https://wagmi.sh/) (for wallet connection)
+- [lucide-react](https://lucide.dev/) (for icons)
+
+## 📚 Documentation
+
+- **Farcaster Mini Apps:**  
+  [https://docs.farcaster.xyz/mini-apps](https://docs.farcaster.xyz/mini-apps)
+
+## Contact
+
+If you have any questions or feedback, please feel free to reach out.
+
+- **Telegram**: [@xerxescoder](https://t.me/xerxescoder)
+- **Telegram Channel**: [@xerxescodes](https://t.me/xerxescodes)
+- **Email**: [xerxescode@gmail.com](mailto:xerxescode@gmail.com)
+  > Made with ❤️ for the Farcaster community.
+
+## 📄 License
+
+MIT
