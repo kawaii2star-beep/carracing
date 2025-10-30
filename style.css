@@ -28,6 +28,9 @@
     border-radius: 16px;
     position: relative;
     overflow: hidden;  /* Ensure no content overflows */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  /* Ensure footer space is at the bottom */
 }
 
 /* Start screen */
@@ -99,6 +102,19 @@
     overflow: hidden;
     border-right: 7px dashed #c8d6e5;
     border-left: 7px dashed #c8d6e5;
+}
+
+/* Footer section to fill the space below */
+.footer {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Lane markers */
